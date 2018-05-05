@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A4C644209DE8BF00AC877B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C643209DE8BF00AC877B /* ImageView.swift */; };
+		A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C647209DEB8000AC877B /* ImageDownload.swift */; };
 		A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5011209DC78E00795E33 /* AppDelegate.swift */; };
 		A0DC5014209DC78E00795E33 /* BrewdogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */; };
 		A0DC5017209DC78E00795E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC5015209DC78E00795E33 /* Main.storyboard */; };
@@ -15,6 +17,20 @@
 		A0DC5027209DC79000795E33 /* brewdogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5026209DC79000795E33 /* brewdogTests.swift */; };
 		A0DC5032209DC79000795E33 /* brewdogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5031209DC79000795E33 /* brewdogUITests.swift */; };
 		A0DC504B209DD29C00795E33 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC504A209DD29C00795E33 /* BeerCell.swift */; };
+		A0DC5052209DD50F00795E33 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5050209DD50F00795E33 /* Network.swift */; };
+		A0DC5053209DD50F00795E33 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5051209DD50F00795E33 /* API.swift */; };
+		A0DC5055209DD5BE00795E33 /* BrewdogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5054209DD5BE00795E33 /* BrewdogListViewModel.swift */; };
+		A0DC5061209DD66F00795E33 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5056209DD66F00795E33 /* Hop.swift */; };
+		A0DC5062209DD66F00795E33 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5057209DD66F00795E33 /* Temp.swift */; };
+		A0DC5063209DD66F00795E33 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5058209DD66F00795E33 /* Amount.swift */; };
+		A0DC5064209DD66F00795E33 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5059209DD66F00795E33 /* Method.swift */; };
+		A0DC5065209DD66F00795E33 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505A209DD66F00795E33 /* Ingredients.swift */; };
+		A0DC5066209DD66F00795E33 /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505B209DD66F00795E33 /* Malt.swift */; };
+		A0DC5067209DD66F00795E33 /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505C209DD66F00795E33 /* Fermentation.swift */; };
+		A0DC5068209DD66F00795E33 /* Boil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505D209DD66F00795E33 /* Boil.swift */; };
+		A0DC5069209DD66F00795E33 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505E209DD66F00795E33 /* Beer.swift */; };
+		A0DC506A209DD66F00795E33 /* Mash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505F209DD66F00795E33 /* Mash.swift */; };
+		A0DC506B209DD66F00795E33 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5060209DD66F00795E33 /* Volume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0A4C643209DE8BF00AC877B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A0A4C647209DEB8000AC877B /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		A0DC500E209DC78E00795E33 /* brewdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brewdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5011209DC78E00795E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,20 @@
 		A0DC5031209DC79000795E33 /* brewdogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brewdogUITests.swift; sourceTree = "<group>"; };
 		A0DC5033209DC79000795E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DC504A209DD29C00795E33 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		A0DC5050209DD50F00795E33 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A0DC5051209DD50F00795E33 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A0DC5054209DD5BE00795E33 /* BrewdogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewModel.swift; sourceTree = "<group>"; };
+		A0DC5056209DD66F00795E33 /* Hop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		A0DC5057209DD66F00795E33 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		A0DC5058209DD66F00795E33 /* Amount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		A0DC5059209DD66F00795E33 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		A0DC505A209DD66F00795E33 /* Ingredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		A0DC505B209DD66F00795E33 /* Malt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		A0DC505C209DD66F00795E33 /* Fermentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
+		A0DC505D209DD66F00795E33 /* Boil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boil.swift; sourceTree = "<group>"; };
+		A0DC505E209DD66F00795E33 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		A0DC505F209DD66F00795E33 /* Mash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mash.swift; sourceTree = "<group>"; };
+		A0DC5060209DD66F00795E33 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +176,7 @@
 		A0DC5040209DC92700795E33 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A0DC5054209DD5BE00795E33 /* BrewdogListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -159,6 +192,8 @@
 		A0DC5042209DC92800795E33 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A0DC5051209DD50F00795E33 /* API.swift */,
+				A0DC5050209DD50F00795E33 /* Network.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -181,6 +216,7 @@
 		A0DC5045209DC92800795E33 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A0A4C643209DE8BF00AC877B /* ImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +233,17 @@
 		A0DC5047209DC92800795E33 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0DC5058209DD66F00795E33 /* Amount.swift */,
+				A0DC505D209DD66F00795E33 /* Boil.swift */,
+				A0DC505C209DD66F00795E33 /* Fermentation.swift */,
+				A0DC5056209DD66F00795E33 /* Hop.swift */,
+				A0DC505A209DD66F00795E33 /* Ingredients.swift */,
+				A0DC505E209DD66F00795E33 /* Beer.swift */,
+				A0DC505B209DD66F00795E33 /* Malt.swift */,
+				A0DC505F209DD66F00795E33 /* Mash.swift */,
+				A0DC5059209DD66F00795E33 /* Method.swift */,
+				A0DC5057209DD66F00795E33 /* Temp.swift */,
+				A0DC5060209DD66F00795E33 /* Volume.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +259,7 @@
 		A0DC5049209DC92800795E33 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0A4C647209DEB8000AC877B /* ImageDownload.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -347,9 +395,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DC5064209DD66F00795E33 /* Method.swift in Sources */,
 				A0DC504B209DD29C00795E33 /* BeerCell.swift in Sources */,
+				A0DC5067209DD66F00795E33 /* Fermentation.swift in Sources */,
+				A0A4C644209DE8BF00AC877B /* ImageView.swift in Sources */,
+				A0DC5068209DD66F00795E33 /* Boil.swift in Sources */,
+				A0DC5061209DD66F00795E33 /* Hop.swift in Sources */,
+				A0DC5063209DD66F00795E33 /* Amount.swift in Sources */,
 				A0DC5014209DC78E00795E33 /* BrewdogListViewController.swift in Sources */,
+				A0DC5062209DD66F00795E33 /* Temp.swift in Sources */,
+				A0DC506A209DD66F00795E33 /* Mash.swift in Sources */,
+				A0DC5069209DD66F00795E33 /* Beer.swift in Sources */,
+				A0DC5052209DD50F00795E33 /* Network.swift in Sources */,
 				A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */,
+				A0DC5065209DD66F00795E33 /* Ingredients.swift in Sources */,
+				A0DC5053209DD50F00795E33 /* API.swift in Sources */,
+				A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */,
+				A0DC5055209DD5BE00795E33 /* BrewdogListViewModel.swift in Sources */,
+				A0DC506B209DD66F00795E33 /* Volume.swift in Sources */,
+				A0DC5066209DD66F00795E33 /* Malt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

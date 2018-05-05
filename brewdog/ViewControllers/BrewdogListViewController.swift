@@ -10,9 +10,18 @@ import UIKit
 
 class BrewdogListViewController: UIViewController {
 
+    
+    let brewdogListViewModel = BrewdogListViewModel()
+    
+    @IBOutlet weak var beerTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        brewdogListViewModel.list(success: { beers in
+            self.beerTableView.reloadData()
+        }) { (response, object, error) in
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,12 +34,12 @@ class BrewdogListViewController: UIViewController {
 extension BrewdogListViewController: UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return brewdogListViewModel.beerItems.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: BeerCell = tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as! BeerCell
-//        stationsViewModel.configureCell(cell: cell, indexPath: indexPath)
+        brewdogListViewModel.configureCell(cell: cell, indexPath: indexPath)
         return cell
     }
     
