@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODF-TO-RRa">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Brewdog Beers-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BrewdogListViewController" id="BYZ-38-t0r" customClass="BrewdogListViewController" customModule="brewdog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6N-jI-RKA">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerCell" rowHeight="240" id="hrE-wm-pDR" customClass="BeerCell" customModule="brewdog" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hrE-wm-pDR" id="cIY-yb-vVd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="239.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baK-EG-s5s">
+                                                    <rect key="frame" x="15" y="11" width="84" height="218"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="218" id="RNI-KS-HHB"/>
+                                                        <constraint firstAttribute="width" constant="84" id="mE6-Vz-8Ry"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNK IPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yJW-wU-62j">
+                                                    <rect key="frame" x="107" y="11" width="220" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="eT1-dp-hAQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFp-ZV-es9">
+                                                    <rect key="frame" x="335" y="0.0" width="40" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-uT-x6N">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.61176470588235299" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="0vI-X6-iC4"/>
+                                                        <constraint firstAttribute="height" constant="30" id="2Na-LU-y4p"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6Sh-uT-x6N" secondAttribute="trailing" id="3Qo-bj-yut"/>
+                                                        <constraint firstItem="6Sh-uT-x6N" firstAttribute="top" secondItem="HFp-ZV-es9" secondAttribute="top" id="9E1-hy-sfZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6Sh-uT-x6N" secondAttribute="bottom" id="ewt-l1-rd8"/>
+                                                        <constraint firstItem="6Sh-uT-x6N" firstAttribute="leading" secondItem="HFp-ZV-es9" secondAttribute="leading" id="g1H-xJ-mfZ"/>
+                                                    </constraints>
+                                                </view>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs5-uI-QmU">
+                                                    <rect key="frame" x="107" y="56" width="260" height="173"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hs5-uI-QmU" secondAttribute="bottom" constant="11" id="1R3-7P-cLF"/>
+                                                <constraint firstItem="yJW-wU-62j" firstAttribute="top" secondItem="cIY-yb-vVd" secondAttribute="topMargin" id="2Ga-oK-skE"/>
+                                                <constraint firstItem="hs5-uI-QmU" firstAttribute="leading" secondItem="baK-EG-s5s" secondAttribute="trailing" constant="8" id="EZz-kY-HRV"/>
+                                                <constraint firstItem="baK-EG-s5s" firstAttribute="leading" secondItem="cIY-yb-vVd" secondAttribute="leading" constant="15" id="KS0-vA-znF"/>
+                                                <constraint firstAttribute="trailing" secondItem="hs5-uI-QmU" secondAttribute="trailing" constant="8" id="NIW-9u-qbE"/>
+                                                <constraint firstItem="hs5-uI-QmU" firstAttribute="top" secondItem="yJW-wU-62j" secondAttribute="bottom" constant="9" id="VXD-SE-VpJ"/>
+                                                <constraint firstItem="HFp-ZV-es9" firstAttribute="top" secondItem="cIY-yb-vVd" secondAttribute="top" id="cc9-EP-EEX"/>
+                                                <constraint firstAttribute="bottom" secondItem="baK-EG-s5s" secondAttribute="bottom" constant="11" id="nJv-rU-qnc"/>
+                                                <constraint firstAttribute="trailing" secondItem="HFp-ZV-es9" secondAttribute="trailing" id="oNg-xk-1yl"/>
+                                                <constraint firstItem="yJW-wU-62j" firstAttribute="leading" secondItem="baK-EG-s5s" secondAttribute="trailing" constant="8" id="uSN-tq-DoE"/>
+                                                <constraint firstItem="baK-EG-s5s" firstAttribute="top" secondItem="cIY-yb-vVd" secondAttribute="top" constant="11" id="wOe-IX-qBX"/>
+                                                <constraint firstItem="HFp-ZV-es9" firstAttribute="leading" secondItem="yJW-wU-62j" secondAttribute="trailing" constant="8" id="zXh-55-gGP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="abvLabel" destination="6Sh-uT-x6N" id="JKl-NY-f2k"/>
+                                            <outlet property="beerImageView" destination="baK-EG-s5s" id="rPQ-v9-KWu"/>
+                                            <outlet property="detailTextView" destination="hs5-uI-QmU" id="nlW-uQ-VNn"/>
+                                            <outlet property="nameLabel" destination="yJW-wU-62j" id="0eB-gH-P7J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HA9-Xp-QAC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WNj-W8-yya"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N6N-jI-RKA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9dZ-vq-muU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N6N-jI-RKA" secondAttribute="bottom" id="IIU-N9-W7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N6N-jI-RKA" secondAttribute="trailing" id="krW-Le-8sU"/>
+                            <constraint firstItem="N6N-jI-RKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mWV-x8-uEx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brewdog Beers" id="w9N-mS-2iC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-564.53201970443354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JKI-By-L0c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODF-TO-RRa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yzt-Lm-ach">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.61176470588235299" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z56-gs-Ohw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaF-Gj-twk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.60000000000002" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>
