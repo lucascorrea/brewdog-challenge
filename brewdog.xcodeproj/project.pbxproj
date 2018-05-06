@@ -23,6 +23,17 @@
 		A0A4C65F209F687900AC877B /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C65E209F687900AC877B /* DataViewModel.swift */; };
 		A0A4C662209FA6EA00AC877B /* HopValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C661209FA6EA00AC877B /* HopValidator.swift */; };
 		A0A4C664209FB3AF00AC877B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A0A4C663209FB3AF00AC877B /* .swiftlint.yml */; };
+		A0A4C669209FB9CB00AC877B /* HopSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C668209FB9CB00AC877B /* HopSpec.swift */; };
+		A0A4C66C209FBABD00AC877B /* AmountSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C66B209FBABD00AC877B /* AmountSpec.swift */; };
+		A0A4C66E209FBB9200AC877B /* BoilSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C66D209FBB9200AC877B /* BoilSpec.swift */; };
+		A0A4C670209FBBE300AC877B /* FermentationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C66F209FBBE300AC877B /* FermentationSpec.swift */; };
+		A0A4C672209FBBFD00AC877B /* IngredientsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C671209FBBFC00AC877B /* IngredientsSpec.swift */; };
+		A0A4C674209FBC0600AC877B /* BeerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C673209FBC0600AC877B /* BeerSpec.swift */; };
+		A0A4C676209FBC0F00AC877B /* MaltSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C675209FBC0F00AC877B /* MaltSpec.swift */; };
+		A0A4C678209FBC1A00AC877B /* MashSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C677209FBC1A00AC877B /* MashSpec.swift */; };
+		A0A4C67A209FBC2300AC877B /* MethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C679209FBC2300AC877B /* MethodSpec.swift */; };
+		A0A4C67C209FBC2C00AC877B /* TempSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67B209FBC2C00AC877B /* TempSpec.swift */; };
+		A0A4C67E209FBC3600AC877B /* VolumeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */; };
 		A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5011209DC78E00795E33 /* AppDelegate.swift */; };
 		A0DC5014209DC78E00795E33 /* BrewdogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */; };
 		A0DC5017209DC78E00795E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC5015209DC78E00795E33 /* Main.storyboard */; };
@@ -44,18 +55,10 @@
 		A0DC506A209DD66F00795E33 /* Mash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC505F209DD66F00795E33 /* Mash.swift */; };
 		A0DC506B209DD66F00795E33 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5060209DD66F00795E33 /* Volume.swift */; };
 		A4AAF3F0EDA42D0D80BBE979 /* Pods_brewdogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15BAB1661CF5CFA7476F5F3 /* Pods_brewdogTests.framework */; };
-		E4D6027107EDED5A23768DF5 /* Pods_brewdogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BE6053E2B4196C7E6F8B47 /* Pods_brewdogUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A0DC5023209DC79000795E33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0DC5006209DC78E00795E33 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0DC500D209DC78E00795E33;
-			remoteInfo = brewdog;
-		};
-		A0DC502E209DC79000795E33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0DC5006209DC78E00795E33 /* Project object */;
 			proxyType = 1;
@@ -86,6 +89,18 @@
 		A0A4C65E209F687900AC877B /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		A0A4C661209FA6EA00AC877B /* HopValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopValidator.swift; sourceTree = "<group>"; };
 		A0A4C663209FB3AF00AC877B /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A0A4C667209FB9CA00AC877B /* brewdogTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brewdogTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0A4C668209FB9CB00AC877B /* HopSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopSpec.swift; sourceTree = "<group>"; };
+		A0A4C66B209FBABD00AC877B /* AmountSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountSpec.swift; sourceTree = "<group>"; };
+		A0A4C66D209FBB9200AC877B /* BoilSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilSpec.swift; sourceTree = "<group>"; };
+		A0A4C66F209FBBE300AC877B /* FermentationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FermentationSpec.swift; sourceTree = "<group>"; };
+		A0A4C671209FBBFC00AC877B /* IngredientsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsSpec.swift; sourceTree = "<group>"; };
+		A0A4C673209FBC0600AC877B /* BeerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSpec.swift; sourceTree = "<group>"; };
+		A0A4C675209FBC0F00AC877B /* MaltSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaltSpec.swift; sourceTree = "<group>"; };
+		A0A4C677209FBC1A00AC877B /* MashSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashSpec.swift; sourceTree = "<group>"; };
+		A0A4C679209FBC2300AC877B /* MethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSpec.swift; sourceTree = "<group>"; };
+		A0A4C67B209FBC2C00AC877B /* TempSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSpec.swift; sourceTree = "<group>"; };
+		A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSpec.swift; sourceTree = "<group>"; };
 		A0DC500E209DC78E00795E33 /* brewdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brewdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5011209DC78E00795E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +110,6 @@
 		A0DC501D209DC79000795E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DC5022209DC79000795E33 /* brewdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brewdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5028209DC79000795E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0DC502D209DC79000795E33 /* brewdogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brewdogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0DC5033209DC79000795E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DC504A209DD29C00795E33 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
 		A0DC5050209DD50F00795E33 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		A0DC5051209DD50F00795E33 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -131,14 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AAF3F0EDA42D0D80BBE979 /* Pods_brewdogTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0DC502A209DC79000795E33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4D6027107EDED5A23768DF5 /* Pods_brewdogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,13 +185,30 @@
 			path = Displays;
 			sourceTree = "<group>";
 		};
+		A0A4C66A209FBA6700AC877B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4C668209FB9CB00AC877B /* HopSpec.swift */,
+				A0A4C66B209FBABD00AC877B /* AmountSpec.swift */,
+				A0A4C66D209FBB9200AC877B /* BoilSpec.swift */,
+				A0A4C66F209FBBE300AC877B /* FermentationSpec.swift */,
+				A0A4C671209FBBFC00AC877B /* IngredientsSpec.swift */,
+				A0A4C673209FBC0600AC877B /* BeerSpec.swift */,
+				A0A4C675209FBC0F00AC877B /* MaltSpec.swift */,
+				A0A4C677209FBC1A00AC877B /* MashSpec.swift */,
+				A0A4C679209FBC2300AC877B /* MethodSpec.swift */,
+				A0A4C67B209FBC2C00AC877B /* TempSpec.swift */,
+				A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A0DC5005209DC78E00795E33 = {
 			isa = PBXGroup;
 			children = (
 				A0A4C663209FB3AF00AC877B /* .swiftlint.yml */,
 				A0DC5010209DC78E00795E33 /* brewdog */,
 				A0DC5025209DC79000795E33 /* brewdogTests */,
-				A0DC5030209DC79000795E33 /* brewdogUITests */,
 				A0DC500F209DC78E00795E33 /* Products */,
 				7CE2C397DB853D9BE3ED2875 /* Pods */,
 				F02A9053DEE7A4D79B56D105 /* Frameworks */,
@@ -198,7 +220,6 @@
 			children = (
 				A0DC500E209DC78E00795E33 /* brewdog.app */,
 				A0DC5022209DC79000795E33 /* brewdogTests.xctest */,
-				A0DC502D209DC79000795E33 /* brewdogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,16 +246,10 @@
 			isa = PBXGroup;
 			children = (
 				A0DC5028209DC79000795E33 /* Info.plist */,
+				A0A4C66A209FBA6700AC877B /* Models */,
+				A0A4C667209FB9CA00AC877B /* brewdogTests-Bridging-Header.h */,
 			);
 			path = brewdogTests;
-			sourceTree = "<group>";
-		};
-		A0DC5030209DC79000795E33 /* brewdogUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A0DC5033209DC79000795E33 /* Info.plist */,
-			);
-			path = brewdogUITests;
 			sourceTree = "<group>";
 		};
 		A0DC503F209DC92700795E33 /* Resources */ = {
@@ -395,25 +410,6 @@
 			productReference = A0DC5022209DC79000795E33 /* brewdogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A0DC502C209DC79000795E33 /* brewdogUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0DC503C209DC79000795E33 /* Build configuration list for PBXNativeTarget "brewdogUITests" */;
-			buildPhases = (
-				FE59A2D6B8835A42BC258429 /* [CP] Check Pods Manifest.lock */,
-				A0DC5029209DC79000795E33 /* Sources */,
-				A0DC502A209DC79000795E33 /* Frameworks */,
-				A0DC502B209DC79000795E33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0DC502F209DC79000795E33 /* PBXTargetDependency */,
-			);
-			name = brewdogUITests;
-			productName = brewdogUITests;
-			productReference = A0DC502D209DC79000795E33 /* brewdogUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -429,10 +425,7 @@
 					};
 					A0DC5021209DC79000795E33 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = A0DC500D209DC78E00795E33;
-					};
-					A0DC502C209DC79000795E33 = {
-						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						TestTargetID = A0DC500D209DC78E00795E33;
 					};
 				};
@@ -452,7 +445,6 @@
 			targets = (
 				A0DC500D209DC78E00795E33 /* brewdog */,
 				A0DC5021209DC79000795E33 /* brewdogTests */,
-				A0DC502C209DC79000795E33 /* brewdogUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -470,13 +462,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A0DC5020209DC79000795E33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0DC502B209DC79000795E33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,24 +541,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE59A2D6B8835A42BC258429 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-brewdogUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -619,13 +586,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0DC5029209DC79000795E33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A0A4C67C209FBC2C00AC877B /* TempSpec.swift in Sources */,
+				A0A4C674209FBC0600AC877B /* BeerSpec.swift in Sources */,
+				A0A4C670209FBBE300AC877B /* FermentationSpec.swift in Sources */,
+				A0A4C67A209FBC2300AC877B /* MethodSpec.swift in Sources */,
+				A0A4C66C209FBABD00AC877B /* AmountSpec.swift in Sources */,
+				A0A4C672209FBBFD00AC877B /* IngredientsSpec.swift in Sources */,
+				A0A4C67E209FBC3600AC877B /* VolumeSpec.swift in Sources */,
+				A0A4C676209FBC0F00AC877B /* MaltSpec.swift in Sources */,
+				A0A4C678209FBC1A00AC877B /* MashSpec.swift in Sources */,
+				A0A4C669209FB9CB00AC877B /* HopSpec.swift in Sources */,
+				A0A4C66E209FBB9200AC877B /* BoilSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,11 +607,6 @@
 			isa = PBXTargetDependency;
 			target = A0DC500D209DC78E00795E33 /* brewdog */;
 			targetProxy = A0DC5023209DC79000795E33 /* PBXContainerItemProxy */;
-		};
-		A0DC502F209DC79000795E33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0DC500D209DC78E00795E33 /* brewdog */;
-			targetProxy = A0DC502E209DC79000795E33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -834,6 +800,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = brewdogTests/Info.plist;
@@ -844,6 +811,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.brewdogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "brewdogTests/brewdogTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brewdog.app/brewdog";
@@ -856,6 +825,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = brewdogTests/Info.plist;
@@ -866,51 +836,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.brewdogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "brewdogTests/brewdogTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/brewdog.app/brewdog";
-			};
-			name = Release;
-		};
-		A0DC503D209DC79000795E33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF304DEE47C4A992303DC86F /* Pods-brewdogUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = brewdogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.brewdogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = brewdog;
-			};
-			name = Debug;
-		};
-		A0DC503E209DC79000795E33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49987400E632D3C03A516C46 /* Pods-brewdogUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = brewdogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.brewdogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = brewdog;
 			};
 			name = Release;
 		};
@@ -940,15 +869,6 @@
 			buildConfigurations = (
 				A0DC503A209DC79000795E33 /* Debug */,
 				A0DC503B209DC79000795E33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0DC503C209DC79000795E33 /* Build configuration list for PBXNativeTarget "brewdogUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0DC503D209DC79000795E33 /* Debug */,
-				A0DC503E209DC79000795E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
