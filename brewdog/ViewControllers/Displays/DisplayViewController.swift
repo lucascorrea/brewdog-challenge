@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class DisplayViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     //

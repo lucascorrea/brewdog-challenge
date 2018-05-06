@@ -17,26 +17,28 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
         return methodViewModel
     }()
     
+    var notification: NotificationCenter?
+    
     //
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(forName: Notification.Name("updateCell"), object: nil, queue: OperationQueue.main) { (notification) in
+        notification = NotificationCenter.default.addObserver(forName: Notification.Name("updateCell"), object: nil, queue: OperationQueue.main) { (notification) in
             self.tableview.reloadData()
             
-            let indexPath = IndexPath(row: notification.object as! Int, section: 0)
+            let indexPath = IndexPath(row: (notification.object as? Int)!, section: 0)
             
             // Updates the title of button
             if let state = self.methodViewModel.beer.method?.mash?[indexPath.row].state {
-                let cell: DisplayCell = self.tableview.cellForRow(at:indexPath) as! DisplayCell
+                let cell: DisplayCell = (self.tableview.cellForRow(at:indexPath) as? DisplayCell)!
                 cell.actionButton.setTitle(state, for: .normal)
             }
-        }
+            } as? NotificationCenter
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self)
+        notification?.removeObserver(self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,7 +66,7 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: DisplayCell = tableView.dequeueReusableCell(withIdentifier: "DisplayCell", for: indexPath) as! DisplayCell
+        let cell: DisplayCell = (tableView.dequeueReusableCell(withIdentifier: "DisplayCell", for: indexPath) as? DisplayCell)!
         
         let viewModel: DataViewModel? = methodViewModel
         cell.configure(withViewModel: viewModel!, indexPath: indexPath, cellDelegate: self)

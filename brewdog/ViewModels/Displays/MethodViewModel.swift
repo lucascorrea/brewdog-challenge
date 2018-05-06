@@ -15,7 +15,6 @@ class MethodViewModel: DataViewModel {
     var beer: Beer
     var timer = Timer()
     
-    
     //
     // MARK: - Initializer
     init() {
@@ -34,21 +33,14 @@ class MethodViewModel: DataViewModel {
             case MashState.IDLE.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.RUNNING.rawValue
                 startTimer(index: indexPath.row)
-                break
             case MashState.RUNNING.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.PAUSE.rawValue
                 timer.invalidate()
-                break
-                
             case MashState.PAUSE.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.RUNNING.rawValue
                 startTimer(index: indexPath.row)
-                break
-                
             case MashState.DONE.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
-                break
-                
             default:
                 print("")
             }
@@ -63,7 +55,7 @@ class MethodViewModel: DataViewModel {
     }
     
     @objc func updateTimer(timer: Timer) {
-        let index = timer.userInfo as! Int
+        let index = (timer.userInfo as? Int)!
         
         if let duration = beer.method?.mash?[index].countDown {
             if duration == 0 {
@@ -76,7 +68,6 @@ class MethodViewModel: DataViewModel {
         
         NotificationCenter.default.post(name: Notification.Name("updateCell"), object: index)
     }
-    
     
     //
     // MARK: - DataViewModel

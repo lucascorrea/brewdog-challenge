@@ -30,13 +30,9 @@ class MaltViewModel: DataViewModel {
             case State.IDLE.rawValue:
                 beer.ingredients?.malt?[indexPath.row].state = State.DONE.rawValue
                 cell.actionButton.setTitle("DONE", for: .normal)
-                break
-                
             case State.DONE.rawValue:
                 beer.ingredients?.malt?[indexPath.row].state = State.IDLE.rawValue
                 cell.actionButton.setTitle("IDLE", for: .normal)
-                break
-                
             default:
                 print("")
             }
@@ -46,7 +42,7 @@ class MaltViewModel: DataViewModel {
     //
     // MARK: - DataViewModel
     func name(indexPath: IndexPath) -> String {
-        if let name = beer.ingredients?.malt?[indexPath.row].name{
+        if let name = beer.ingredients?.malt?[indexPath.row].name {
             return "\(name)"
         }
         return ""

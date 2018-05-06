@@ -16,7 +16,7 @@ class Malt: Codable {
     
 	enum CodingKeys: String, CodingKey {
 		case amount
-		case name = "name"
+		case name
 	}
     
     init() {

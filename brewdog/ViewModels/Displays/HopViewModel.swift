@@ -9,7 +9,7 @@
 import UIKit
 
 class HopViewModel: DataViewModel {
-
+    
     //
     // MARK: - Properties
     var beer: Beer
@@ -36,13 +36,9 @@ class HopViewModel: DataViewModel {
                     case State.IDLE.rawValue:
                         beer.ingredients?.hops?[indexPath.row].state = State.DONE.rawValue
                         cell.actionButton.setTitle("DONE", for: .normal)
-                        break
-                        
                     case State.DONE.rawValue:
                         beer.ingredients?.hops?[indexPath.row].state = State.IDLE.rawValue
                         cell.actionButton.setTitle("IDLE", for: .normal)
-                        break
-                        
                     default:
                         print("")
                     }

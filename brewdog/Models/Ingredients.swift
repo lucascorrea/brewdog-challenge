@@ -15,9 +15,9 @@ struct Ingredients: Codable {
 	let yeast: String?
 
 	enum CodingKeys: String, CodingKey {
-		case hops = "hops"
-		case malt = "malt"
-		case yeast = "yeast"
+		case hops
+		case malt
+		case yeast
 	}
 
 }

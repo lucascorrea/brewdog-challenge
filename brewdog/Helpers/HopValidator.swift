@@ -18,7 +18,6 @@ class HopValidator {
         self.hopArray = list
     }
     
-    
     func canChange() -> Bool {
     
         //A hop element with the attribute add=middle can’t be DONE until all the hops with add=start are done.

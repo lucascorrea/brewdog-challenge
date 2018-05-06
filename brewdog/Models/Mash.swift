@@ -23,7 +23,7 @@ class Mash: Codable {
     var state: String = MashState.IDLE.rawValue
     
 	enum CodingKeys: String, CodingKey {
-		case duration = "duration"
+		case duration
 		case temp
         case countDown
 	}

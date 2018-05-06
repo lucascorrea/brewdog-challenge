@@ -22,10 +22,10 @@ class Hop: Codable {
     var state: String = State.IDLE.rawValue
     
 	enum CodingKeys: String, CodingKey {
-		case add = "add"
+		case add
 		case amount
-		case attribute = "attribute"
-		case name = "name"
+		case attribute
+		case name
 	}
     
     init() {

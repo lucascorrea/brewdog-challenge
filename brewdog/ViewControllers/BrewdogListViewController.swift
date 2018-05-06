@@ -20,10 +20,11 @@ class BrewdogListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        brewdogListViewModel.list(success: { beers in
+        brewdogListViewModel.list(success: { _ in
             self.beerTableView.reloadData()
-        }) { (response, object, error) in
-        }
+        }, failure: { response, object, error in
+            print("\(String(describing: response)) \(String(describing: object)) \(String(describing: error))")
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +50,7 @@ extension BrewdogListViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: BeerCell = tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as! BeerCell
+        let cell: BeerCell = (tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as? BeerCell)!
         cell.configure(withViewModel: brewdogListViewModel, indexPath: indexPath)
         return cell
     }
@@ -70,4 +71,3 @@ extension BrewdogListViewController: UITableViewDelegate {
         self.performSegue(withIdentifier: "detailSegue", sender: beer)
     }
 }
-

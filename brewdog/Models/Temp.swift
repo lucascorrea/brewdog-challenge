@@ -14,8 +14,8 @@ struct Temp: Codable {
 	let value: Int?
 
 	enum CodingKeys: String, CodingKey {
-		case unit = "unit"
-		case value = "value"
+		case unit
+		case value
 	}
 
 }
