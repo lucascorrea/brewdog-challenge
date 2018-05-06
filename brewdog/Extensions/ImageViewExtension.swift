@@ -10,6 +10,8 @@ import UIKit
 
 extension UIImageView {
     
+    //
+    // MARK: - Functions
     func setImage(withUrl url: String) {
         self.image = UIImage(named: "BeerEmpty")
         ImageDownload.shared.downloadImageFrom(urlString: url) { (image) in

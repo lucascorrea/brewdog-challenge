@@ -10,14 +10,14 @@ import UIKit
 
 class ImageDownload {
     
-    // Just cache local
-    let imageCache = NSCache<NSString, AnyObject>()
-    
     //
     // MARK: - Properties
     static let shared = ImageDownload()
     var imageURLString: String?
-
+    
+    // Just cache local
+    let imageCache = NSCache<NSString, AnyObject>()
+    
     //
     // MARK: - Functions
     func downloadImageFrom(urlString: String, completion: @escaping (UIImage) -> Void) {

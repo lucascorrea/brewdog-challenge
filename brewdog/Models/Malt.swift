@@ -8,14 +8,20 @@
 
 import Foundation
 
-struct Malt: Codable {
+class Malt: Codable {
     
 	let amount: Amount?
 	let name: String?
-
+    var state: String = State.IDLE.rawValue
+    
 	enum CodingKeys: String, CodingKey {
 		case amount
 		case name = "name"
 	}
     
+    init() {
+        amount = nil
+        name = ""
+        state = State.IDLE.rawValue
+    }
 }

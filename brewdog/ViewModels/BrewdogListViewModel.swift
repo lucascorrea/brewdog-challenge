@@ -29,7 +29,6 @@ class BrewdogListViewModel {
     //
     // MARK: - Public Functions
     func list(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
-        
         let request = API.allBeers
         Network.request(target: request, success: { (response) in
             
@@ -50,24 +49,5 @@ class BrewdogListViewModel {
         }, failure: { (response, object, error) in
             failure(response, object, error)
         })
-        
-    }
-    
-    // Configure Cell
-    func configureCell(cell: BeerCell, indexPath: IndexPath) {
-        let beer = beerItems[indexPath.row]
-        cell.nameLabel.text = beer.name
-        
-        if let abv = beer.abv {
-            cell.abvLabel.text = "\(abv)%"
-        }
-        
-        if let description = beer.description {
-            cell.detailLabel.text = description
-        }
-        
-        if let image = beer.imageUrl {
-            cell.beerImageView.setImage(withUrl: image)
-        }
     }
 }
