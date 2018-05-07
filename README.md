@@ -4,6 +4,10 @@
 
 This is the project to the DropKitchen challenge described below.
 
+[![Build Status](https://travis-ci.org/lucascorrea/brewdog-challenge.svg?branch=master)](https://travis-ci.org/lucascorrea/brewdog-challenge)
+[![codecov](https://codecov.io/gh/lucascorrea/brewdog-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/lucascorrea/brewdog-challenge)
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat"></a>
+
 
 ## Running:
 
