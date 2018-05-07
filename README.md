@@ -10,7 +10,8 @@ This is the project to the DropKitchen challenge described below.
 
 ## Demo
 
-![Brewdog Demo](http://www.lucascorrea.com/images/brewdog.gif)
+![Brewdog Demo](http://www.lucascorrea.com/images/brewdog1.gif)
+![Brewdog Demo](http://www.lucascorrea.com/images/brewdog2.gif)
 
 ## Running:
 
