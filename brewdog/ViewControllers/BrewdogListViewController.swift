@@ -21,6 +21,8 @@ class BrewdogListViewController: UIViewController {
         super.viewDidLoad()
         
         Loading.show(view: UIApplication.shared.keyWindow!)
+        
+        //Get list of beers
         brewdogListViewModel.list(success: { _ in
             Loading.close(view: UIApplication.shared.keyWindow!)
             self.beerTableView.reloadData()

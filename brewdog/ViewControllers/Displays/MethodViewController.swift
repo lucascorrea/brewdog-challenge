@@ -25,20 +25,6 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
           NotificationCenter.default.addObserver(self, selector: #selector(MethodViewController.updateCell(notification:)), name: Notification.Name("updateCell"), object: nil)
     }
     
-    @objc func teste() {
-    }
-    @objc func updateCell(notification: Notification) {
-        self.tableview?.reloadData()
-        
-        let indexPath = IndexPath(row: (notification.object as? Int)!, section: 0)
-        
-        // Updates the title of button
-        if let state = self.methodViewModel.beer.method?.mash?[indexPath.row].state {
-            let cell: DisplayCell = (self.tableview?.cellForRow(at:indexPath) as? DisplayCell)!
-            cell.actionButton?.setTitle(state, for: .normal)
-        }
-    }
-    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -52,6 +38,18 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
     // MARK: - Functions
     override func setBeer(beer: Beer) {
         methodViewModel.beer = beer
+    }
+    
+    @objc func updateCell(notification: Notification) {
+        self.tableview?.reloadData()
+        
+        let indexPath = IndexPath(row: (notification.object as? Int)!, section: 0)
+        
+        // Updates the title of button
+        if let state = self.methodViewModel.beer.method?.mash?[indexPath.row].state {
+            let cell: DisplayCell = (self.tableview?.cellForRow(at:indexPath) as? DisplayCell)!
+            cell.actionButton?.setTitle(state, for: .normal)
+        }
     }
     
     //
