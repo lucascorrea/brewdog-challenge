@@ -8,6 +8,9 @@ This is the project to the DropKitchen challenge described below.
 [![codecov](https://codecov.io/gh/lucascorrea/brewdog-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/lucascorrea/brewdog-challenge)
 <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat"></a>
 
+## Demo
+
+![Brewdog Demo](http://www.lucascorrea.com/images/brewdog.gif)
 
 ## Running:
 
