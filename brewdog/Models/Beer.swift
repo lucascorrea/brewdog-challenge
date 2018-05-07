@@ -22,7 +22,7 @@ class Beer: Codable {
     let ibu: Double?
     let id: Int?
     let imageUrl: String?
-    let ingredients: Ingredients?
+    var ingredients: Ingredients?
     let method: Method?
     let name: String?
     let ph: Double?
@@ -78,5 +78,29 @@ class Beer: Codable {
         targetFg = 0
         targetOg = 0
         volume = nil
+    }
+    
+    init(abv: Double, imageUrl: String, ingredients: Ingredients, method: Method, name: String) {
+        self.abv = abv
+        self.attenuationLevel = 0
+        self.boil = nil
+        self.brewersTips = ""
+        self.contributedBy = ""
+        self.description = ""
+        self.ebc = 0
+        self.firstBrewed = ""
+        self.foodPairing = []
+        self.ibu = 0
+        self.id = 0
+        self.imageUrl = imageUrl
+        self.ingredients = ingredients
+        self.method = method
+        self.name = name
+        self.ph = 0.0
+        self.srm = 0
+        self.tagline = ""
+        self.targetFg = 0
+        self.targetOg = 0
+        self.volume = nil
     }
 }

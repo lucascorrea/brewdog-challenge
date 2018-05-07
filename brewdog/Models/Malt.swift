@@ -24,4 +24,9 @@ class Malt: Codable {
         name = ""
         state = State.IDLE.rawValue
     }
+    
+    init(amount: Amount, name: String) {
+        self.amount = amount
+        self.name = name
+    }
 }

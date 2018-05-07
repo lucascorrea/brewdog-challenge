@@ -29,10 +29,10 @@ class MaltViewModel: DataViewModel {
             switch state {
             case State.IDLE.rawValue:
                 beer.ingredients?.malt?[indexPath.row].state = State.DONE.rawValue
-                cell.actionButton.setTitle("DONE", for: .normal)
+                cell.actionButton?.setTitle("DONE", for: .normal)
             case State.DONE.rawValue:
                 beer.ingredients?.malt?[indexPath.row].state = State.IDLE.rawValue
-                cell.actionButton.setTitle("IDLE", for: .normal)
+                cell.actionButton?.setTitle("IDLE", for: .normal)
             default:
                 print("")
             }

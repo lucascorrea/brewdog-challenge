@@ -35,5 +35,13 @@ class Hop: Codable {
         name = ""
         state = State.IDLE.rawValue
     }
+    
+    init(add: String, amount: Amount, attribute: String, name: String) {
+        self.add = add
+        self.amount = amount
+        self.attribute = attribute
+        self.name = name
+        self.state = State.IDLE.rawValue
+    }
 
 }

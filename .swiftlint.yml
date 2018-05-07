@@ -20,6 +20,10 @@ force_try:
 
 line_length: 300
 
+function_body_length:
+    - 60 # warning
+    - 100 # error
+
 type_body_length:
   - 300
   - 400
@@ -31,7 +35,7 @@ file_length:
 type_name:
   min_length: 3
   max_length:
-    warning: 40
+    warning: 60
     error: 50
   excluded: iPhone
 

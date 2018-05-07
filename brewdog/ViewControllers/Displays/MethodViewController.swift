@@ -17,28 +17,30 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
         return methodViewModel
     }()
     
-    var notification: NotificationCenter?
-    
     //
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notification = NotificationCenter.default.addObserver(forName: Notification.Name("updateCell"), object: nil, queue: OperationQueue.main) { (notification) in
-            self.tableview.reloadData()
-            
-            let indexPath = IndexPath(row: (notification.object as? Int)!, section: 0)
-            
-            // Updates the title of button
-            if let state = self.methodViewModel.beer.method?.mash?[indexPath.row].state {
-                let cell: DisplayCell = (self.tableview.cellForRow(at:indexPath) as? DisplayCell)!
-                cell.actionButton.setTitle(state, for: .normal)
-            }
-            } as? NotificationCenter
+          NotificationCenter.default.addObserver(self, selector: #selector(MethodViewController.updateCell(notification:)), name: Notification.Name("updateCell"), object: nil)
+    }
+    
+    @objc func teste() {
+    }
+    @objc func updateCell(notification: Notification) {
+        self.tableview?.reloadData()
+        
+        let indexPath = IndexPath(row: (notification.object as? Int)!, section: 0)
+        
+        // Updates the title of button
+        if let state = self.methodViewModel.beer.method?.mash?[indexPath.row].state {
+            let cell: DisplayCell = (self.tableview?.cellForRow(at:indexPath) as? DisplayCell)!
+            cell.actionButton?.setTitle(state, for: .normal)
+        }
     }
     
     deinit {
-        notification?.removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,7 +53,7 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
     override func setBeer(beer: Beer) {
         methodViewModel.beer = beer
     }
-
+    
     //
     // MARK: - DisplayCellDelegate
     func didChangeState(onCell cell: DisplayCell) {

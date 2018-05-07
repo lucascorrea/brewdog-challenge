@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1F7A18C6994F71E4D5F389B0 /* Pods_brewdog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD813B0A86FFD9BE4F33192 /* Pods_brewdog.framework */; };
+		A004DB95209FC2B5004504A3 /* BeerDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB94209FC2B5004504A3 /* BeerDetailViewControllerSpec.swift */; };
+		A004DB97209FC33A004504A3 /* BrewdogListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB96209FC33A004504A3 /* BrewdogListViewModelSpec.swift */; };
+		A004DB99209FC40A004504A3 /* HopViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB98209FC40A004504A3 /* HopViewModelSpec.swift */; };
+		A004DB9B20A04765004504A3 /* DisplayViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB9A20A04765004504A3 /* DisplayViewControllerSpec.swift */; };
+		A004DB9D20A04774004504A3 /* MethodViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB9C20A04774004504A3 /* MethodViewControllerSpec.swift */; };
+		A004DB9F20A04781004504A3 /* HopViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DB9E20A04781004504A3 /* HopViewControllerSpec.swift */; };
+		A004DBA120A04792004504A3 /* MaltViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA020A04792004504A3 /* MaltViewControllerSpec.swift */; };
+		A004DBA320A04A0F004504A3 /* MethodViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA220A04A0F004504A3 /* MethodViewModelSpec.swift */; };
+		A004DBA520A04A1B004504A3 /* MaltViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA420A04A1B004504A3 /* MaltViewModelSpec.swift */; };
+		A004DBA820A04E1C004504A3 /* HopValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */; };
+		A004DBAA20A06FD3004504A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A004DBA920A06FD3004504A3 /* README.md */; };
 		A0A4C644209DE8BF00AC877B /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */; };
 		A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C647209DEB8000AC877B /* ImageDownload.swift */; };
 		A0A4C64A209DFB9600AC877B /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */; };
@@ -34,6 +45,7 @@
 		A0A4C67A209FBC2300AC877B /* MethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C679209FBC2300AC877B /* MethodSpec.swift */; };
 		A0A4C67C209FBC2C00AC877B /* TempSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67B209FBC2C00AC877B /* TempSpec.swift */; };
 		A0A4C67E209FBC3600AC877B /* VolumeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */; };
+		A0A4C682209FC07700AC877B /* BrewdogListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C681209FC07700AC877B /* BrewdogListViewControllerSpec.swift */; };
 		A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5011209DC78E00795E33 /* AppDelegate.swift */; };
 		A0DC5014209DC78E00795E33 /* BrewdogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */; };
 		A0DC5017209DC78E00795E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC5015209DC78E00795E33 /* Main.storyboard */; };
@@ -74,6 +86,17 @@
 		86BE6053E2B4196C7E6F8B47 /* Pods_brewdogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brewdogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE149CE393D6562BB2D3708 /* Pods-brewdog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brewdog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brewdog/Pods-brewdog.debug.xcconfig"; sourceTree = "<group>"; };
 		9FD813B0A86FFD9BE4F33192 /* Pods_brewdog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brewdog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A004DB94209FC2B5004504A3 /* BeerDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewControllerSpec.swift; sourceTree = "<group>"; };
+		A004DB96209FC33A004504A3 /* BrewdogListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewModelSpec.swift; sourceTree = "<group>"; };
+		A004DB98209FC40A004504A3 /* HopViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopViewModelSpec.swift; sourceTree = "<group>"; };
+		A004DB9A20A04765004504A3 /* DisplayViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewControllerSpec.swift; sourceTree = "<group>"; };
+		A004DB9C20A04774004504A3 /* MethodViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodViewControllerSpec.swift; sourceTree = "<group>"; };
+		A004DB9E20A04781004504A3 /* HopViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopViewControllerSpec.swift; sourceTree = "<group>"; };
+		A004DBA020A04792004504A3 /* MaltViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaltViewControllerSpec.swift; sourceTree = "<group>"; };
+		A004DBA220A04A0F004504A3 /* MethodViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodViewModelSpec.swift; sourceTree = "<group>"; };
+		A004DBA420A04A1B004504A3 /* MaltViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaltViewModelSpec.swift; sourceTree = "<group>"; };
+		A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopValidatorSpec.swift; sourceTree = "<group>"; };
+		A004DBA920A06FD3004504A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		A0A4C647209DEB8000AC877B /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +124,7 @@
 		A0A4C679209FBC2300AC877B /* MethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSpec.swift; sourceTree = "<group>"; };
 		A0A4C67B209FBC2C00AC877B /* TempSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSpec.swift; sourceTree = "<group>"; };
 		A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSpec.swift; sourceTree = "<group>"; };
+		A0A4C681209FC07700AC877B /* BrewdogListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewControllerSpec.swift; sourceTree = "<group>"; };
 		A0DC500E209DC78E00795E33 /* brewdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brewdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5011209DC78E00795E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +187,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A004DBA620A04E00004504A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A0A4C64F209EFA0500AC877B /* Displays */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,10 +235,35 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A0A4C67F209FC01500AC877B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4C681209FC07700AC877B /* BrewdogListViewControllerSpec.swift */,
+				A004DB94209FC2B5004504A3 /* BeerDetailViewControllerSpec.swift */,
+				A004DB9A20A04765004504A3 /* DisplayViewControllerSpec.swift */,
+				A004DB9C20A04774004504A3 /* MethodViewControllerSpec.swift */,
+				A004DB9E20A04781004504A3 /* HopViewControllerSpec.swift */,
+				A004DBA020A04792004504A3 /* MaltViewControllerSpec.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0A4C680209FC02A00AC877B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A004DB96209FC33A004504A3 /* BrewdogListViewModelSpec.swift */,
+				A004DB98209FC40A004504A3 /* HopViewModelSpec.swift */,
+				A004DBA220A04A0F004504A3 /* MethodViewModelSpec.swift */,
+				A004DBA420A04A1B004504A3 /* MaltViewModelSpec.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A0DC5005209DC78E00795E33 = {
 			isa = PBXGroup;
 			children = (
 				A0A4C663209FB3AF00AC877B /* .swiftlint.yml */,
+				A004DBA920A06FD3004504A3 /* README.md */,
 				A0DC5010209DC78E00795E33 /* brewdog */,
 				A0DC5025209DC79000795E33 /* brewdogTests */,
 				A0DC500F209DC78E00795E33 /* Products */,
@@ -245,8 +302,11 @@
 		A0DC5025209DC79000795E33 /* brewdogTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0DC5028209DC79000795E33 /* Info.plist */,
+				A004DBA620A04E00004504A3 /* Helpers */,
+				A0A4C680209FC02A00AC877B /* ViewModels */,
+				A0A4C67F209FC01500AC877B /* ViewControllers */,
 				A0A4C66A209FBA6700AC877B /* Models */,
+				A0DC5028209DC79000795E33 /* Info.plist */,
 				A0A4C667209FB9CA00AC877B /* brewdogTests-Bridging-Header.h */,
 			);
 			path = brewdogTests;
@@ -465,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A004DBAA20A06FD3004504A3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,15 +648,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A4C67C209FBC2C00AC877B /* TempSpec.swift in Sources */,
+				A004DBA820A04E1C004504A3 /* HopValidatorSpec.swift in Sources */,
 				A0A4C674209FBC0600AC877B /* BeerSpec.swift in Sources */,
 				A0A4C670209FBBE300AC877B /* FermentationSpec.swift in Sources */,
 				A0A4C67A209FBC2300AC877B /* MethodSpec.swift in Sources */,
+				A004DBA320A04A0F004504A3 /* MethodViewModelSpec.swift in Sources */,
 				A0A4C66C209FBABD00AC877B /* AmountSpec.swift in Sources */,
+				A004DB95209FC2B5004504A3 /* BeerDetailViewControllerSpec.swift in Sources */,
+				A004DB9D20A04774004504A3 /* MethodViewControllerSpec.swift in Sources */,
+				A004DB9F20A04781004504A3 /* HopViewControllerSpec.swift in Sources */,
 				A0A4C672209FBBFD00AC877B /* IngredientsSpec.swift in Sources */,
+				A004DBA520A04A1B004504A3 /* MaltViewModelSpec.swift in Sources */,
 				A0A4C67E209FBC3600AC877B /* VolumeSpec.swift in Sources */,
+				A004DB97209FC33A004504A3 /* BrewdogListViewModelSpec.swift in Sources */,
+				A004DB99209FC40A004504A3 /* HopViewModelSpec.swift in Sources */,
+				A004DB9B20A04765004504A3 /* DisplayViewControllerSpec.swift in Sources */,
 				A0A4C676209FBC0F00AC877B /* MaltSpec.swift in Sources */,
 				A0A4C678209FBC1A00AC877B /* MashSpec.swift in Sources */,
+				A004DBA120A04792004504A3 /* MaltViewControllerSpec.swift in Sources */,
 				A0A4C669209FB9CB00AC877B /* HopSpec.swift in Sources */,
+				A0A4C682209FC07700AC877B /* BrewdogListViewControllerSpec.swift in Sources */,
 				A0A4C66E209FBB9200AC877B /* BoilSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

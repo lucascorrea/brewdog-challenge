@@ -42,7 +42,7 @@ class MethodViewModel: DataViewModel {
             case MashState.DONE.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
             default:
-                print("")
+                beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
             }
         }
         

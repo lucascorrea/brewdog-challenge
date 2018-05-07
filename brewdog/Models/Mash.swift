@@ -33,4 +33,10 @@ class Mash: Codable {
         temp = nil
         countDown = 0
     }
+    
+    init(duration: Int, temp: Temp, countDown: Int) {
+        self.duration = duration
+        self.temp = temp
+        self.countDown = countDown
+    }
 }
