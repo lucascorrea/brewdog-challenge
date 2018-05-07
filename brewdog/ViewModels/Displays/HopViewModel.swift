@@ -59,7 +59,7 @@ class HopViewModel: DataViewModel {
     }
     
     func value(indexPath: IndexPath) -> String {
-        if let value = beer.ingredients?.hops?[indexPath.row].amount?.value, let unit = beer.ingredients?.hops![indexPath.row].amount?.unit {
+        if let value = beer.ingredients?.hops?[indexPath.row].amount?.value, let unit = beer.ingredients?.hops?[indexPath.row].amount?.unit {
             return "\(value) \(unit)"
         }
         return ""

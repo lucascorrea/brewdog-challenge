@@ -42,7 +42,9 @@ class BrewdogListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
             let destination: BeerDetailViewController = (segue.destination as? BeerDetailViewController)!
-            destination.beerDetailViewModel.beer = (sender as? Beer)!
+            if let beer = sender as? Beer {
+                destination.beerDetailViewModel.beer = beer
+            }
         }
     }
 }

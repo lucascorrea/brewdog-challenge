@@ -83,7 +83,7 @@ class MethodViewModel: DataViewModel {
     }
     
     func value(indexPath: IndexPath) -> String {
-        if let value = beer.method?.mash?[indexPath.row].temp?.value, let unit = beer.method?.mash![indexPath.row].temp?.unit {
+        if let value = beer.method?.mash?[indexPath.row].temp?.value, let unit = beer.method?.mash?[indexPath.row].temp?.unit {
             return "\(value) \(unit)"
         }
         return ""

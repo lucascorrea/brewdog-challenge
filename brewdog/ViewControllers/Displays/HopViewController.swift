@@ -51,8 +51,8 @@ class HopViewController: DisplayViewController, DisplayCellDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: DisplayCell = (tableView.dequeueReusableCell(withIdentifier: "DisplayCell", for: indexPath) as? DisplayCell)!
         
-        let viewModel: DataViewModel? = hopViewModel
-        cell.configure(withViewModel: viewModel!, indexPath: indexPath, cellDelegate: self)
+        let viewModel: DataViewModel = hopViewModel
+        cell.configure(withViewModel: viewModel, indexPath: indexPath, cellDelegate: self)
         return cell
     }
     
