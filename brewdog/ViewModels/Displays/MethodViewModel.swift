@@ -92,7 +92,7 @@ class MethodViewModel: DataViewModel {
     func extra(indexPath: IndexPath) -> String {
         if let countDown = beer.method?.mash?[indexPath.row].countDown {
             if beer.method?.mash?[indexPath.row].state == MashState.RUNNING.rawValue || beer.method?.mash?[indexPath.row].state == MashState.PAUSE.rawValue {
-                return "\(countDown)"
+                return "CountDown: \(countDown)"
             }
         }
         return ""

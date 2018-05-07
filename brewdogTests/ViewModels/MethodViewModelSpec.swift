@@ -97,6 +97,7 @@ class MethodViewModelSpec: QuickSpec {
 
             describe("function get extra") {
                 it("should get the extra of a method") {
+                    beer?.method?.mash![0].countDown = 20
                     let name = methodViewModel.value(indexPath: IndexPath(row: 0, section: 0))
                     expect(name).notTo(beNil())
                 }

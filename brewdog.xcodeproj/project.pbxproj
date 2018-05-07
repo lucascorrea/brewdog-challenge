@@ -19,6 +19,7 @@
 		A004DBA520A04A1B004504A3 /* MaltViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA420A04A1B004504A3 /* MaltViewModelSpec.swift */; };
 		A004DBA820A04E1C004504A3 /* HopValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */; };
 		A004DBAA20A06FD3004504A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A004DBA920A06FD3004504A3 /* README.md */; };
+		A004DBAC20A0759A004504A3 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBAB20A07599004504A3 /* Loading.swift */; };
 		A0A4C644209DE8BF00AC877B /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */; };
 		A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C647209DEB8000AC877B /* ImageDownload.swift */; };
 		A0A4C64A209DFB9600AC877B /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */; };
@@ -97,6 +98,7 @@
 		A004DBA420A04A1B004504A3 /* MaltViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaltViewModelSpec.swift; sourceTree = "<group>"; };
 		A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopValidatorSpec.swift; sourceTree = "<group>"; };
 		A004DBA920A06FD3004504A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A004DBAB20A07599004504A3 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		A0A4C647209DEB8000AC877B /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 		A0DC5049209DC92800795E33 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A004DBAB20A07599004504A3 /* Loading.swift */,
 				A0A4C647209DEB8000AC877B /* ImageDownload.swift */,
 				A0A4C661209FA6EA00AC877B /* HopValidator.swift */,
 			);
@@ -615,6 +618,7 @@
 				A0A4C644209DE8BF00AC877B /* ImageViewExtension.swift in Sources */,
 				A0DC5068209DD66F00795E33 /* Boil.swift in Sources */,
 				A0A4C64A209DFB9600AC877B /* BeerDetailViewController.swift in Sources */,
+				A004DBAC20A0759A004504A3 /* Loading.swift in Sources */,
 				A0A4C657209F11BA00AC877B /* MaltViewController.swift in Sources */,
 				A0A4C659209F124B00AC877B /* MethodViewModel.swift in Sources */,
 				A0DC5061209DD66F00795E33 /* Hop.swift in Sources */,

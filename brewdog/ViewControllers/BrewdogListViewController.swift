@@ -20,9 +20,12 @@ class BrewdogListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Loading.show(view: UIApplication.shared.keyWindow!)
         brewdogListViewModel.list(success: { _ in
+            Loading.close(view: UIApplication.shared.keyWindow!)
             self.beerTableView.reloadData()
         }, failure: { response, object, error in
+            Loading.close(view: UIApplication.shared.keyWindow!)
             print("\(String(describing: response)) \(String(describing: object)) \(String(describing: error))")
         })
     }
