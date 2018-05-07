@@ -3,11 +3,7 @@ osx_image: xcode9.3beta
 xcode_workspace: brewdog.xcworkspace
 xcode_scheme: brewdogTests
 before_install:
-- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-- gem install bundler
 install:
-- bundle install
 script:
 - xcodebuild -workspace brewdog.xcworkspace -list
 - xcodebuild -workspace brewdog.xcworkspace -scheme brewdog -sdk iphonesimulator
