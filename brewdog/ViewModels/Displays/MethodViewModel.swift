@@ -24,7 +24,29 @@ class MethodViewModel: DataViewModel {
     
     //
     // MARK: - Functions
-    func updateMethodState(onCell cell:DisplayCell, indexPath:IndexPath) {
+    func startTimer(index: Int) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer(timer:)), userInfo: index, repeats: true)
+        RunLoop.main.add(timer, forMode: .commonModes)
+    }
+    
+    @objc func updateTimer(timer: Timer) {
+        let index = (timer.userInfo as? Int)!
+        
+        if let duration = beer.method?.mash?[index].countDown {
+            if duration == 0 {
+                timer.invalidate()
+                beer.method?.mash?[index].state = MashState.DONE.rawValue
+            } else {
+                beer.method?.mash?[index].countDown = duration - 1
+            }
+        }
+        
+        NotificationCenter.default.post(name: Notification.Name("updateCell"), object: index)
+    }
+    
+    //
+    // MARK: - DataViewModel
+    func updateState(onCell cell:DisplayCell, indexPath:IndexPath) {
         
         if let state = beer.method?.mash?[indexPath.row].state {
             
@@ -49,28 +71,6 @@ class MethodViewModel: DataViewModel {
         NotificationCenter.default.post(name: Notification.Name("updateCell"), object: indexPath.row)
     }
     
-    func startTimer(index: Int) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer(timer:)), userInfo: index, repeats: true)
-        RunLoop.main.add(timer, forMode: .commonModes)
-    }
-    
-    @objc func updateTimer(timer: Timer) {
-        let index = (timer.userInfo as? Int)!
-        
-        if let duration = beer.method?.mash?[index].countDown {
-            if duration == 0 {
-                timer.invalidate()
-                beer.method?.mash?[index].state = MashState.DONE.rawValue
-            } else {
-                beer.method?.mash?[index].countDown = duration - 1
-            }
-        }
-        
-        NotificationCenter.default.post(name: Notification.Name("updateCell"), object: index)
-    }
-    
-    //
-    // MARK: - DataViewModel
     func name(indexPath: IndexPath) -> String {
         if let duration = beer.method?.mash?[indexPath.row].duration {
             if beer.method?.mash?[indexPath.row].state == MashState.IDLE.rawValue {

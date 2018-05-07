@@ -43,7 +43,7 @@ class MethodViewModelSpec: QuickSpec {
             describe("updateMethodState") {
                 it("should be updated to DONE the cell to a method") {
                     //From DONE to IDLE
-                    methodViewModel.updateMethodState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    methodViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
                     let state = beer?.method?.mash![0].state.description
                     expect(state).to(equal(MashState.IDLE.rawValue))
                 }
@@ -51,7 +51,7 @@ class MethodViewModelSpec: QuickSpec {
                 it("should be updated to RUNNING the cell to a method") {
                     //From RUNNING to PAUSE
                     beer?.method?.mash![0].state = MashState.RUNNING.rawValue
-                    methodViewModel.updateMethodState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    methodViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
                     let state = beer?.method?.mash![0].state.description
                     expect(state).to(equal(MashState.PAUSE.rawValue))
                 }
@@ -59,7 +59,7 @@ class MethodViewModelSpec: QuickSpec {
                 it("should be updated to PAUSE the cell to a method") {
                     //From PAUSE to RUNNING
                     beer?.method?.mash![0].state = MashState.PAUSE.rawValue
-                    methodViewModel.updateMethodState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    methodViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
                     let state = beer?.method?.mash![0].state.description
                     expect(state).to(equal(MashState.RUNNING.rawValue))
                 }
@@ -67,7 +67,7 @@ class MethodViewModelSpec: QuickSpec {
                 it("should be updated to IDLE the cell to a method") {
                     //From IDLE to RUNNING
                     beer?.method?.mash![0].state = MashState.IDLE.rawValue
-                    methodViewModel.updateMethodState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    methodViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
                     let state = beer?.method?.mash![0].state.description
                     expect(state).to(equal(MashState.RUNNING.rawValue))
                 }
@@ -75,7 +75,7 @@ class MethodViewModelSpec: QuickSpec {
                 it("should be updated to unknown the cell to a method") {
                     
                     beer?.method?.mash![0].state = ""
-                    methodViewModel.updateMethodState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    methodViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
                     let state = beer?.method?.mash![0].state.description
                     expect(state).to(equal(MashState.IDLE.rawValue))
                 }

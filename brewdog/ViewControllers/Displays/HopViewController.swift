@@ -39,7 +39,7 @@ class HopViewController: DisplayViewController, DisplayCellDelegate {
     // MARK: - DisplayCellDelegate
     func didChangeState(onCell cell: DisplayCell) {
         if let indexPath = tableview.indexPath(for: cell) {
-            hopViewModel.updateHopState(onCell: cell, indexPath: indexPath)
+            hopViewModel.updateState(onCell: cell, indexPath: indexPath)
         }
     }
     

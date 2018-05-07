@@ -22,7 +22,10 @@ class MaltViewModel: DataViewModel {
     
     //
     // MARK: - Actions
-    func updateMaltState(onCell cell:DisplayCell, indexPath:IndexPath) {
+    
+    //
+    // MARK: - DataViewModel
+    func updateState(onCell cell:DisplayCell, indexPath:IndexPath) {
         if let state = beer.ingredients?.malt?[indexPath.row].state {
             
             // Checks and changes the status of Malt
@@ -39,8 +42,6 @@ class MaltViewModel: DataViewModel {
         }
     }
     
-    //
-    // MARK: - DataViewModel
     func name(indexPath: IndexPath) -> String {
         if let name = beer.ingredients?.malt?[indexPath.row].name {
             return "\(name)"

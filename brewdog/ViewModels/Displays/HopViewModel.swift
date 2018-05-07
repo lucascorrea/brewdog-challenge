@@ -22,10 +22,13 @@ class HopViewModel: DataViewModel {
     
     //
     // MARK: - Functions
-    func updateHopState(onCell cell:DisplayCell, indexPath:IndexPath) {
+    
+    //
+    // MARK: - DataViewModel
+    func updateState(onCell cell:DisplayCell, indexPath:IndexPath) {
         if let hop = beer.ingredients?.hops?[indexPath.row], let array = beer.ingredients?.hops {
             
-            // Validator 
+            // Validator
             let validator = HopValidator(withHop: hop, list: array)
             
             if validator.canChange() {
@@ -49,8 +52,6 @@ class HopViewModel: DataViewModel {
         }
     }
     
-    //
-    // MARK: - DataViewModel
     func name(indexPath: IndexPath) -> String {
         if let name = beer.ingredients?.hops?[indexPath.row].name {
             return "\(name)"

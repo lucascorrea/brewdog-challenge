@@ -56,7 +56,7 @@ class MethodViewController: DisplayViewController, DisplayCellDelegate {
     // MARK: - DisplayCellDelegate
     func didChangeState(onCell cell: DisplayCell) {
         if let indexPath = tableview.indexPath(for: cell) {
-            methodViewModel.updateMethodState(onCell: cell, indexPath: indexPath)
+            methodViewModel.updateState(onCell: cell, indexPath: indexPath)
         }
     }
     

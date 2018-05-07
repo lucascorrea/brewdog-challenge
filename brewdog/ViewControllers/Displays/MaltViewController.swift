@@ -38,7 +38,7 @@ class MaltViewController: DisplayViewController, DisplayCellDelegate {
     // MARK: - DisplayCellDelegate
     func didChangeState(onCell cell: DisplayCell) {
         if let indexPath = tableview.indexPath(for: cell) {
-            maltViewModel.updateMaltState(onCell: cell, indexPath: indexPath)
+            maltViewModel.updateState(onCell: cell, indexPath: indexPath)
         }
     }
     

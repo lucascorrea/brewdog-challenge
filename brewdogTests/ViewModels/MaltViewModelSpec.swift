@@ -43,8 +43,8 @@ class MaltViewModelSpec: QuickSpec {
             describe("updateMaltState") {
                 it("should be updated the cell to a malt") {
                     let state1 = beer?.ingredients?.malt![0].state.description
-                    matlViewModel.updateMaltState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
-                    matlViewModel.updateMaltState(onCell: cell!, indexPath: IndexPath(row: 1, section: 0))
+                    matlViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 0, section: 0))
+                    matlViewModel.updateState(onCell: cell!, indexPath: IndexPath(row: 1, section: 0))
                     let state2 = beer?.ingredients?.malt![0].state.description
                     expect(state1).toNot(equal(state2))
                 }

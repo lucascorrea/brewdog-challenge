@@ -13,4 +13,6 @@ protocol DataViewModel {
     func value(indexPath: IndexPath) -> String
     func extra(indexPath: IndexPath) -> String
     func state(indexPath: IndexPath) -> String
+    
+    func updateState(onCell cell:DisplayCell, indexPath:IndexPath)
 }
