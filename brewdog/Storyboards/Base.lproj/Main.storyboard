@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODF-TO-RRa">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,18 @@
             <objects>
                 <viewController storyboardIdentifier="BrewdogListViewController" id="BYZ-38-t0r" customClass="BrewdogListViewController" customModule="brewdog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6N-jI-RKA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeerCell" rowHeight="240" id="hrE-wm-pDR" customClass="BeerCell" customModule="brewdog" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="240"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hrE-wm-pDR" id="cIY-yb-vVd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="239.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baK-EG-s5s">
@@ -38,7 +38,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNK IPA PUNK IPA PUNK IPA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yJW-wU-62j">
-                                                    <rect key="frame" x="107" y="6" width="220" height="46"/>
+                                                    <rect key="frame" x="107" y="6" width="613" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="eT1-dp-hAQ"/>
                                                     </constraints>
@@ -47,7 +47,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFp-ZV-es9">
-                                                    <rect key="frame" x="335" y="0.0" width="40" height="30"/>
+                                                    <rect key="frame" x="728" y="0.0" width="40" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-uT-x6N">
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -60,14 +60,14 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="0vI-X6-iC4"/>
                                                         <constraint firstAttribute="height" constant="30" id="2Na-LU-y4p"/>
-                                                        <constraint firstAttribute="trailing" secondItem="6Sh-uT-x6N" secondAttribute="trailing" id="3Qo-bj-yut"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6Sh-uT-x6N" secondAttribute="trailing" priority="750" id="3Qo-bj-yut"/>
                                                         <constraint firstItem="6Sh-uT-x6N" firstAttribute="top" secondItem="HFp-ZV-es9" secondAttribute="top" id="9E1-hy-sfZ"/>
                                                         <constraint firstAttribute="bottom" secondItem="6Sh-uT-x6N" secondAttribute="bottom" id="ewt-l1-rd8"/>
                                                         <constraint firstItem="6Sh-uT-x6N" firstAttribute="leading" secondItem="HFp-ZV-es9" secondAttribute="leading" id="g1H-xJ-mfZ"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Saq-sf-Cf6">
-                                                    <rect key="frame" x="107" y="54" width="260" height="65.5"/>
+                                                    <rect key="frame" x="107" y="54" width="653" height="33"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -125,18 +125,18 @@
             <objects>
                 <viewController storyboardIdentifier="BeerDetailViewController" title="Beer" id="JhC-GX-k69" customClass="BeerDetailViewController" customModule="brewdog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vfq-By-kwA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KnG-xT-SX9">
-                                <rect key="frame" x="122" y="5" width="131" height="190"/>
+                                <rect key="frame" x="318.5" y="5" width="131" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="131" id="V6o-eK-9mX"/>
                                     <constraint firstAttribute="height" constant="190" id="dTb-uW-dgT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNK IPA PUNK IPA PUNK IPA  IPA PUNK IPA " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NSc-S9-sgI">
-                                <rect key="frame" x="20" y="212" width="335" height="44"/>
+                                <rect key="frame" x="20" y="212" width="728" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="UkH-Hu-nLH"/>
                                 </constraints>
@@ -145,7 +145,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gt5-sm-aGc">
-                                <rect key="frame" x="335" y="0.0" width="40" height="30"/>
+                                <rect key="frame" x="728" y="0.0" width="40" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-lh-92i">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -166,14 +166,14 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-He-SIy">
-                                <rect key="frame" x="20" y="253" width="335" height="198"/>
+                                <rect key="frame" x="20" y="253" width="728" height="555"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Q-Es-SEz">
-                                <rect key="frame" x="27" y="464" width="321" height="40"/>
+                                <rect key="frame" x="27" y="821" width="714" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.61176470589999998" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sMJ-nQ-uzz"/>
@@ -189,7 +189,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-Wo-Q9R">
-                                <rect key="frame" x="27" y="509" width="321" height="40"/>
+                                <rect key="frame" x="27" y="866" width="714" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.61176470589999998" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FQY-0U-GdY"/>
@@ -205,7 +205,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND8-XO-mDL">
-                                <rect key="frame" x="27" y="554" width="321" height="40"/>
+                                <rect key="frame" x="27" y="911" width="714" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.61176470589999998" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5be-9Z-moD"/>
@@ -376,7 +376,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODF-TO-RRa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yzt-Lm-ach">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0" green="0.61176470588235299" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
