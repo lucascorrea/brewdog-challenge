@@ -29,7 +29,7 @@ Execute `pod install`
 - Swift 4.1
 
 
-#### Drop - iOS Code Challenge
+## Drop - iOS Code Challenge
 
 Solve the Brewdog Beer Challenge at home spending as much time & effort as you wish.
 
@@ -49,7 +49,7 @@ Fetch a small number of beers and display them in a list. Each item should show 
 - Name
 - ABV
 
-Description
+##### Description
 
 Display all Hops in a list Display all Malts in a list Display all Methods in a list
 Business Requirements
