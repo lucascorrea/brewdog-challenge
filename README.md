@@ -42,17 +42,21 @@ Build an iOS app that lists a number of beers from the Brewdog public API. The a
 ##### Beer List Screen
 
 Fetch a small number of beers and display them in a list. Each item should show a few critical details:
-- Image Name
-- ABV Description
-- Beer Details Screen
+- Image 
+- Name
+- ABV 
+- Description
+
+##### Beer Details Screen
 - Image
 - Name
 - ABV
+- Description
+- Display all Hops in a list
+- Display all Malts in a list
+- Display all Methods in a list
 
-##### Description
-
-Display all Hops in a list Display all Malts in a list Display all Methods in a list
-Business Requirements
+##### Business Requirements
 
 1. Implement beer details as follows:
 For each element of each list (i.e. Hops, Malts & Methods), a button with two possible states - IDLE and DONE - should be present.
