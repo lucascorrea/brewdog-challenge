@@ -25,14 +25,14 @@ class HopValidator {
         
         switch hop.add {
         case "middle":
-            for hop in hopArray where hop.state == State.IDLE.rawValue &&
-                hop.add == "start" {
+            for hopItem in hopArray where hopItem.state == State.IDLE.rawValue &&
+                hopItem.add == "start" {
                 return false
             }
             return true
         case "end":
-            for hop in hopArray where hop.state == State.IDLE.rawValue &&
-                hop.add == "middle" {
+            for hopItem in hopArray where hopItem.state == State.IDLE.rawValue &&
+                hopItem.add == "middle" {
                 return false
             }
             return true

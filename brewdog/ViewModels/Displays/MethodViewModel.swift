@@ -44,6 +44,14 @@ class MethodViewModel: DataViewModel {
         NotificationCenter.default.post(name: Notification.Name("updateCell"), object: index)
     }
     
+    fileprivate func doneMashState(_ indexPath: IndexPath) {
+        beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
+    }
+    
+    fileprivate func defaultMashState(_ indexPath: IndexPath) {
+        beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
+    }
+    
     //
     // MARK: - DataViewModel
     func updateState(onCell cell:DisplayCell, indexPath:IndexPath) {
@@ -52,19 +60,16 @@ class MethodViewModel: DataViewModel {
             
             // Checks and changes the status of mash
             switch state {
-            case MashState.IDLE.rawValue:
+            case MashState.IDLE.rawValue, MashState.PAUSE.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.RUNNING.rawValue
                 startTimer(index: indexPath.row)
             case MashState.RUNNING.rawValue:
                 beer.method?.mash?[indexPath.row].state = MashState.PAUSE.rawValue
                 timer.invalidate()
-            case MashState.PAUSE.rawValue:
-                beer.method?.mash?[indexPath.row].state = MashState.RUNNING.rawValue
-                startTimer(index: indexPath.row)
             case MashState.DONE.rawValue:
-                beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
+                doneMashState(indexPath)
             default:
-                beer.method?.mash?[indexPath.row].state = MashState.IDLE.rawValue
+                defaultMashState(indexPath)
             }
         }
         
@@ -90,10 +95,8 @@ class MethodViewModel: DataViewModel {
     }
     
     func extra(indexPath: IndexPath) -> String {
-        if let countDown = beer.method?.mash?[indexPath.row].countDown {
-            if beer.method?.mash?[indexPath.row].state == MashState.RUNNING.rawValue || beer.method?.mash?[indexPath.row].state == MashState.PAUSE.rawValue {
-                return "CountDown: \(countDown)"
-            }
+        if let countDown = beer.method?.mash?[indexPath.row].countDown, beer.method?.mash?[indexPath.row].state == MashState.RUNNING.rawValue || beer.method?.mash?[indexPath.row].state == MashState.PAUSE.rawValue {
+            return "CountDown: \(countDown)"
         }
         return ""
     }

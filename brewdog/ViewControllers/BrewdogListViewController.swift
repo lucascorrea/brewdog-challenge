@@ -12,7 +12,11 @@ class BrewdogListViewController: UIViewController {
 
     //
     // MARK: - Properties
-    let brewdogListViewModel = BrewdogListViewModel()
+    lazy var brewdogListViewModel: BrewdogListViewModel = {
+        let brewdogListViewModel = BrewdogListViewModel()
+        return brewdogListViewModel
+    }()
+    
     @IBOutlet weak var beerTableView: UITableView!
     
     //
@@ -73,7 +77,6 @@ extension BrewdogListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let beer = self.brewdogListViewModel.beerItems[indexPath.row]
         self.performSegue(withIdentifier: "detailSegue", sender: beer)
     }

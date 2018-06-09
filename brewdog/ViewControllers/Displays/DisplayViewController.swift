@@ -42,9 +42,6 @@ class DisplayViewController: UIViewController, UIPopoverPresentationControllerDe
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }
-    
-    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-    }
 }
 
 // MARK: - UITableViewDataSource

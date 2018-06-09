@@ -1,29 +1,27 @@
 //
-//  Network.swift
+//  BrewdogClient.swift
 //  brewdog
 //
-//  Created by Lucas Correa on 05/05/2018.
+//  Created by Lucas Correa on 14/05/2018.
 //  Copyright © 2018 SiriusCode. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public typealias SuccessHandler = (Any?) -> Void
 public typealias FailureHandler = (URLResponse?, Any?, Error?) -> Void
 
-class Network {
+class BrewdogClient: NetworkClient {
     
-    static func request(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
-        print(target.url)
+    func request(router: BrewdogRouter, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
+        var urlRequest = URLRequest(url: router.url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 60)
+        urlRequest.httpMethod = router.method
         
-        var urlRequest = URLRequest(url: target.url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 60)
-        urlRequest.httpMethod = target.method
-        
-        for (key, value) in target.headers {
+        for (key, value) in router.headers {
             urlRequest.setValue(value, forHTTPHeaderField: key)
         }
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+        URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if (error != nil) {
                 failure(response, data, error)
             } else {
@@ -35,7 +33,6 @@ class Network {
                 }
                 
             }
-        }
-        task.resume()
+            }.resume()
     }
 }

@@ -46,8 +46,7 @@ class Loading {
         
         UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
             backgroundView.alpha = 1
-            }, completion: { (_) -> Void in
-        })
+            }, completion: nil)
         
     }
     class func close(view: UIView) {

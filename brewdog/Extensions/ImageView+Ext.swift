@@ -1,5 +1,5 @@
 //
-//  ImageDownload.swift
+//  ImageView+Ext.swift
 //  brewdog
 //
 //  Created by Lucas Correa on 05/05/2018.

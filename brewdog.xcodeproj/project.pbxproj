@@ -20,7 +20,7 @@
 		A004DBA820A04E1C004504A3 /* HopValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */; };
 		A004DBAA20A06FD3004504A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A004DBA920A06FD3004504A3 /* README.md */; };
 		A004DBAC20A0759A004504A3 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004DBAB20A07599004504A3 /* Loading.swift */; };
-		A0A4C644209DE8BF00AC877B /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */; };
+		A0A4C644209DE8BF00AC877B /* ImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C643209DE8BF00AC877B /* ImageView+Ext.swift */; };
 		A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C647209DEB8000AC877B /* ImageDownload.swift */; };
 		A0A4C64A209DFB9600AC877B /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */; };
 		A0A4C64C209E025900AC877B /* BeerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C64B209E025900AC877B /* BeerDetailViewModel.swift */; };
@@ -47,14 +47,17 @@
 		A0A4C67C209FBC2C00AC877B /* TempSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67B209FBC2C00AC877B /* TempSpec.swift */; };
 		A0A4C67E209FBC3600AC877B /* VolumeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */; };
 		A0A4C682209FC07700AC877B /* BrewdogListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4C681209FC07700AC877B /* BrewdogListViewControllerSpec.swift */; };
+		A0AF4DFF20A9ACAE00AFBFB9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF4DFE20A9ACAE00AFBFB9 /* Service.swift */; };
+		A0AF4E0120A9ACFA00AFBFB9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF4E0020A9ACFA00AFBFB9 /* NetworkClient.swift */; };
+		A0AF4E0320A9AD5A00AFBFB9 /* BrewdogClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF4E0220A9AD5A00AFBFB9 /* BrewdogClient.swift */; };
+		A0AF4E0620A9AE3900AFBFB9 /* BrewdogListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF4E0520A9AE3900AFBFB9 /* BrewdogListService.swift */; };
 		A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5011209DC78E00795E33 /* AppDelegate.swift */; };
 		A0DC5014209DC78E00795E33 /* BrewdogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */; };
 		A0DC5017209DC78E00795E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC5015209DC78E00795E33 /* Main.storyboard */; };
 		A0DC5019209DC78F00795E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DC5018209DC78F00795E33 /* Assets.xcassets */; };
 		A0DC501C209DC78F00795E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC501A209DC78F00795E33 /* LaunchScreen.storyboard */; };
 		A0DC504B209DD29C00795E33 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC504A209DD29C00795E33 /* BeerCell.swift */; };
-		A0DC5052209DD50F00795E33 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5050209DD50F00795E33 /* Network.swift */; };
-		A0DC5053209DD50F00795E33 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5051209DD50F00795E33 /* API.swift */; };
+		A0DC5053209DD50F00795E33 /* BrewdogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5051209DD50F00795E33 /* BrewdogRouter.swift */; };
 		A0DC5055209DD5BE00795E33 /* BrewdogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5054209DD5BE00795E33 /* BrewdogListViewModel.swift */; };
 		A0DC5061209DD66F00795E33 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5056209DD66F00795E33 /* Hop.swift */; };
 		A0DC5062209DD66F00795E33 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC5057209DD66F00795E33 /* Temp.swift */; };
@@ -99,7 +102,7 @@
 		A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopValidatorSpec.swift; sourceTree = "<group>"; };
 		A004DBA920A06FD3004504A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A004DBAB20A07599004504A3 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
-		A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		A0A4C643209DE8BF00AC877B /* ImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Ext.swift"; sourceTree = "<group>"; };
 		A0A4C647209DEB8000AC877B /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		A0A4C649209DFB9600AC877B /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		A0A4C64B209E025900AC877B /* BeerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewModel.swift; sourceTree = "<group>"; };
@@ -127,6 +130,10 @@
 		A0A4C67B209FBC2C00AC877B /* TempSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSpec.swift; sourceTree = "<group>"; };
 		A0A4C67D209FBC3600AC877B /* VolumeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSpec.swift; sourceTree = "<group>"; };
 		A0A4C681209FC07700AC877B /* BrewdogListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewControllerSpec.swift; sourceTree = "<group>"; };
+		A0AF4DFE20A9ACAE00AFBFB9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A0AF4E0020A9ACFA00AFBFB9 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A0AF4E0220A9AD5A00AFBFB9 /* BrewdogClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogClient.swift; sourceTree = "<group>"; };
+		A0AF4E0520A9AE3900AFBFB9 /* BrewdogListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListService.swift; sourceTree = "<group>"; };
 		A0DC500E209DC78E00795E33 /* brewdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brewdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5011209DC78E00795E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC5013209DC78E00795E33 /* BrewdogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewController.swift; sourceTree = "<group>"; };
@@ -137,8 +144,7 @@
 		A0DC5022209DC79000795E33 /* brewdogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brewdogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC5028209DC79000795E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DC504A209DD29C00795E33 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
-		A0DC5050209DD50F00795E33 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		A0DC5051209DD50F00795E33 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A0DC5051209DD50F00795E33 /* BrewdogRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewdogRouter.swift; sourceTree = "<group>"; };
 		A0DC5054209DD5BE00795E33 /* BrewdogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewdogListViewModel.swift; sourceTree = "<group>"; };
 		A0DC5056209DD66F00795E33 /* Hop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
 		A0DC5057209DD66F00795E33 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
@@ -195,6 +201,14 @@
 				A004DBA720A04E1C004504A3 /* HopValidatorSpec.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A038F88320A9C92800A35D24 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF4E0220A9AD5A00AFBFB9 /* BrewdogClient.swift */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 		A0A4C64F209EFA0500AC877B /* Displays */ = {
@@ -261,6 +275,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		A0AF4E0420A9AE1300AFBFB9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF4DFE20A9ACAE00AFBFB9 /* Service.swift */,
+				A0AF4E0520A9AE3900AFBFB9 /* BrewdogListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A0DC5005209DC78E00795E33 = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +314,7 @@
 				A0DC5045209DC92800795E33 /* Extensions */,
 				A0DC5049209DC92800795E33 /* Helpers */,
 				A0DC5043209DC92800795E33 /* Protocols */,
+				A0AF4E0420A9AE1300AFBFB9 /* Services */,
 				A0DC5042209DC92800795E33 /* Networking */,
 				A0DC5047209DC92800795E33 /* Models */,
 				A0DC5041209DC92700795E33 /* Views */,
@@ -345,8 +369,9 @@
 		A0DC5042209DC92800795E33 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A0DC5051209DD50F00795E33 /* API.swift */,
-				A0DC5050209DD50F00795E33 /* Network.swift */,
+				A0DC5051209DD50F00795E33 /* BrewdogRouter.swift */,
+				A0AF4E0020A9ACFA00AFBFB9 /* NetworkClient.swift */,
+				A038F88320A9C92800A35D24 /* Clients */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -369,7 +394,7 @@
 		A0DC5045209DC92800795E33 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A0A4C643209DE8BF00AC877B /* ImageViewExtension.swift */,
+				A0A4C643209DE8BF00AC877B /* ImageView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -615,11 +640,13 @@
 				A0DC5064209DD66F00795E33 /* Method.swift in Sources */,
 				A0DC504B209DD29C00795E33 /* BeerCell.swift in Sources */,
 				A0DC5067209DD66F00795E33 /* Fermentation.swift in Sources */,
-				A0A4C644209DE8BF00AC877B /* ImageViewExtension.swift in Sources */,
+				A0A4C644209DE8BF00AC877B /* ImageView+Ext.swift in Sources */,
 				A0DC5068209DD66F00795E33 /* Boil.swift in Sources */,
 				A0A4C64A209DFB9600AC877B /* BeerDetailViewController.swift in Sources */,
+				A0AF4E0620A9AE3900AFBFB9 /* BrewdogListService.swift in Sources */,
 				A004DBAC20A0759A004504A3 /* Loading.swift in Sources */,
 				A0A4C657209F11BA00AC877B /* MaltViewController.swift in Sources */,
+				A0AF4DFF20A9ACAE00AFBFB9 /* Service.swift in Sources */,
 				A0A4C659209F124B00AC877B /* MethodViewModel.swift in Sources */,
 				A0DC5061209DD66F00795E33 /* Hop.swift in Sources */,
 				A0A4C65D209F1C8D00AC877B /* MaltViewModel.swift in Sources */,
@@ -630,14 +657,15 @@
 				A0A4C65F209F687900AC877B /* DataViewModel.swift in Sources */,
 				A0A4C651209EFA2200AC877B /* DisplayViewController.swift in Sources */,
 				A0A4C64E209EF9A800AC877B /* MethodViewController.swift in Sources */,
+				A0AF4E0320A9AD5A00AFBFB9 /* BrewdogClient.swift in Sources */,
 				A0DC5069209DD66F00795E33 /* Beer.swift in Sources */,
-				A0DC5052209DD50F00795E33 /* Network.swift in Sources */,
 				A0A4C64C209E025900AC877B /* BeerDetailViewModel.swift in Sources */,
 				A0A4C653209F018400AC877B /* HopViewController.swift in Sources */,
 				A0DC5012209DC78E00795E33 /* AppDelegate.swift in Sources */,
 				A0A4C65C209F1C8D00AC877B /* HopViewModel.swift in Sources */,
+				A0AF4E0120A9ACFA00AFBFB9 /* NetworkClient.swift in Sources */,
 				A0DC5065209DD66F00795E33 /* Ingredients.swift in Sources */,
-				A0DC5053209DD50F00795E33 /* API.swift in Sources */,
+				A0DC5053209DD50F00795E33 /* BrewdogRouter.swift in Sources */,
 				A0A4C655209F0D4B00AC877B /* DisplayCell.swift in Sources */,
 				A0A4C648209DEB8000AC877B /* ImageDownload.swift in Sources */,
 				A0DC5055209DD5BE00795E33 /* BrewdogListViewModel.swift in Sources */,

@@ -20,32 +20,21 @@ class BrewdogListViewModel {
         }
     }
     
+    var service: BrewdogListService
+    
     //
     // MARK: - Initializer
-    init() {
-        beerItems = [Beer]()
+    init(service: BrewdogListService = BrewdogListService(client: BrewdogClient())) {
+        self.service = service
+        self.beerItems = [Beer]()
     }
     
     //
     // MARK: - Public Functions
     func list(success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
-        let request = API.allBeers
-        Network.request(target: request, success: { (response) in
-            
-            do {
-                guard let data = response as? String else {
-                    print("Error cast response to String")
-                    return
-                }
-                
-                let beers = try JSONDecoder().decode([Beer].self, from: data.data(using: .utf8)!)
-                self.beerItems = beers
-                success(beers as AnyObject)
-            } catch let error {
-                print(error)
-                failure(nil, nil, error)
-            }
-            
+        service.beerList(success: { (beers) in
+            self.beerItems = (beers as? [Beer])!
+            success(beers as AnyObject)
         }, failure: { (response, object, error) in
             failure(response, object, error)
         })

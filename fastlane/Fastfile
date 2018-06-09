@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+require 'fileutils'
+
+default_platform(:ios)
+
+platform :ios do
+
+  before_all do
+    if !File.exists? "../DerivedData"
+      puts "Criou"
+      Dir.mkdir "../DerivedData"
+    end
+  end
+
+  desc "Description of what the lane does"
+  lane :metrics do
+    #We need to put "../DerivedData" because when it is executed it is in folder fastlane
+    sh("xcodebuild -workspace ../brewdog.xcworkspace -scheme brewdog -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.4' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test -derivedDataPath ../DerivedData")
+    sh("xcrun llvm-cov show -instr-profile=$(find ../DerivedData -iname 'Coverage.profdata') ../DerivedData/Build/Products/Debug-iphonesimulator/brewdog.app/brewdog > ../DerivedData/Coverage.report")
+    sonar
+
+  end
+
+  after_all do |lane|
+    if File.exists? "../DerivedData"
+      FileUtils.rm_rf("../DerivedData")
+    end
+  end
+
+  error do |lane, exception|
+    if File.exists? "../DerivedData"
+      FileUtils.rm_rf("../DerivedData")
+    end
+  end
+end

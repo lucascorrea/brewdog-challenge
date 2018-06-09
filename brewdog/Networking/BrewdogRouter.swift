@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum API {
+enum BrewdogRouter {
     case allBeers
+    
+    static var baseUrlString = "https://api.punkapi.com/v2/"
 }
 
-extension API {
-    var baseURL: URL {
-        return URL(string: "https://api.punkapi.com/v2/")!
-    }
+extension BrewdogRouter {
+    
     var method: String {
         switch self {
         case .allBeers:
@@ -32,15 +32,12 @@ extension API {
         return [:]
     }
     var parameters: [String: Any] {
-        switch self {
-        default :
-            return [:]
-        }
+        return [:]
     }
     var url: URL {
         switch self {
         case .allBeers:
-            return URL(string: "\(baseURL)\(path)")!
+            return URL(string: "\(BrewdogRouter.baseUrlString)\(path)")!
         }
     }
 }
