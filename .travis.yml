@@ -7,7 +7,7 @@ install:
 script:
 - xcodebuild -workspace brewdog.xcworkspace -list
 - xcodebuild -workspace brewdog.xcworkspace -scheme brewdog -sdk iphonesimulator
-  -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.4'
+  -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3'
   GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
 after_success:
 - bash <(curl -s https://codecov.io/bash)
